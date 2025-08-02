@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Coach App
 
-## Getting Started
+A comprehensive platform for deep personal transformation, built for repairing relationships, reclaiming health, rediscovering purpose, and rebuilding legacy.
 
-First, run the development server:
+## 🏗️ Architecture
+
+This is a monorepo built with pnpm workspaces containing:
+
+- **`apps/web`** - Next.js web application
+- **`apps/mobile`** - React Native mobile application (via Expo)
+- **`packages/ui`** - Shared UI components
+- **`packages/types`** - Shared TypeScript types
+- **`packages/utils`** - Shared utilities
+- **`backend`** - Supabase helpers and backend services
+
+## 🚀 Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Start development servers
 pnpm dev
-# or
-bun dev
+
+# Build all packages
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Apps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Web App
+```bash
+cd apps/web
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Mobile App
+```bash
+cd apps/mobile
+pnpm start
+```
 
-## Learn More
+## 🧩 Packages
 
-To learn more about Next.js, take a look at the following resources:
+### UI Components
+```bash
+cd packages/ui
+pnpm build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Types
+```bash
+cd packages/types
+pnpm build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Utils
+```bash
+cd packages/utils
+pnpm build
+```
 
-## Deploy on Vercel
+## 🔧 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend**: React + Next.js (Web), React Native + Expo (Mobile)
+- **State Management**: Zustand
+- **Backend**: Supabase (Postgres, Auth, Realtime)
+- **UI**: Tailwind CSS (Web), NativeBase (Mobile)
+- **Package Manager**: pnpm
+- **Monorepo**: pnpm workspaces
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📋 Development Phases
+
+1. **Foundation** - Self-awareness, relationship repair, basic body care
+2. **Rebuild** - Reconnection tools, health enhancement, life compass
+3. **Launchpad** - Reputation repair, blueprint sharing, community
+
+## 🤝 Contributing
+
+1. Create a feature branch
+2. Make your changes
+3. Run tests and linting
+4. Submit a pull request
+
+## 📄 License
+
+MIT
